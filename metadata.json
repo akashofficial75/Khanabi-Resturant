@@ -1,0 +1,6 @@
+{
+  "name": "Khanabi",
+  "description": "Khanabi (খানাবী) - Premium cinematic fast-food and cafe website in Kalampur, Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

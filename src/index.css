@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-khanabi-orange: #FF6B00;
+  --color-khanabi-red: #E60000;
+  --color-khanabi-dark: #050505;
+  --color-khanabi-surface: #111111;
+  --color-khanabi-surface-hover: #1A1A1A;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+  }
+  .box-glow {
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.15);
+  }
+  .box-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.3);
+  }
+  .glass-panel {
+    background: rgba(17, 17, 17, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #FF6B00, #E60000);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-khanabi-dark);
+}
